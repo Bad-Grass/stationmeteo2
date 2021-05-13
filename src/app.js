@@ -1,5 +1,3 @@
-let apiKey = "7d043aad6b03932553921e43b4087be3";
-
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();

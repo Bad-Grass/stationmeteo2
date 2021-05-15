@@ -114,4 +114,27 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
+// -------unit conversion------- //
+
+let celsiusTemp = null;
+
+function showCelsiusTemp(event) {
+  event.preventDefault();
+  let temp = document.querySelector(".temperature");
+  temp.innerHTML = Math.round(celsiusTemp);
+}
+
+function showFahrenheitConversion(event) {
+  event.preventDefault();
+  let temp = document.querySelector(".temperature");
+  let fahTemp = (celsiusTemp * 9) / 5 + 32;
+  temp.innerHTML = Math.round(fahTemp);
+}
+
+let celsiusUnit = document.querySelector(".celsius");
+celsiusUnit.addEventListener("click", showCelsiusTemp);
+
+let fahrenheitUnit = document.querySelector(".fah");
+fahrenheitUnit.addEventListener("click", showFahrenheitConversion);
+
 search("New York");

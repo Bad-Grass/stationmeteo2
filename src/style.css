@@ -98,3 +98,14 @@ hr {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
+.units {
+  font-size: 17px;
+  top: -1.4em;
+}
+.units a {
+  color: #000;
+  text-decoration: none;
+}
+.units a:hover {
+  text-decoration: underline;
+}
